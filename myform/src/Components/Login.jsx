@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../Components/Sign.css'
 
 export function EmailInput() {
   const [email, setEmail] = useState('');
@@ -8,8 +9,8 @@ export function EmailInput() {
   };
 
   return (
-    <div>
-      <label>Email:</label>
+    <div className='Email'>
+      <label>Email: </label>
       <input
         type="email"
         value={email}
@@ -21,6 +22,7 @@ export function EmailInput() {
   );
 }
 
+
 export function PasswordInput() {
   const [password, setPassword] = useState('');
 
@@ -29,17 +31,19 @@ export function PasswordInput() {
   };
 
   return (
-    <div>
-      <label>Password:</label>
+    <div className='pass'>
+      <label>Password: </label>
       <input
         type="password"
         value={password}
         onChange={handleChange}
         placeholder="Enter your password"
       />
-      <p>You entered: {password}</p>
+      
     </div>
+    
   );
+  
 }
 
 

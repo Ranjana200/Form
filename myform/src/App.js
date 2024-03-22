@@ -1,9 +1,10 @@
 import React from 'react';
 import { EmailInput, PasswordInput } from '../src/Components/Login';
 
+
 function App() {
   return (
-    <div>
+    <div className='app'>
       <EmailInput/>
       <PasswordInput/>
     </div>
