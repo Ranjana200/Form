@@ -29,6 +29,10 @@ export function PasswordInput() {
   const handleChange = (event) => {
     setPassword(event.target.value);
   };
+   
+  const handleLogin = () => {
+    console.log("Login :",password)
+  }
 
   return (
     <div className='pass'>
@@ -37,9 +41,11 @@ export function PasswordInput() {
         type="password"
         value={password}
         onChange={handleChange}
-        placeholder="Enter your password"
-      />
-      
+        placeholder="Enter your password"   
+      /> 
+      <div className='button'>
+      <button onClick={handleLogin}>Login</button>
+      </div> 
     </div>
     
   );

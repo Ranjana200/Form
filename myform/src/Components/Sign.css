@@ -47,3 +47,9 @@
     background-color:rgb(187, 135, 135);
     padding: 165px;
 }
+
+.button
+{
+    height:40px;
+    padding-top: 10px;
+}
